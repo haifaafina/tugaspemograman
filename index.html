@@ -1,0 +1,81 @@
+<html>
+<title>TUGAS 13</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body>
+
+<div class="w3-container">
+	<img src="HAIFA AFINA.jpg" style="width:100%">
+</div>
+
+<div class="w3-bar w3-orange w3-card-4">
+	<button class="w3-bar-item w3-button" onclick="openCartoon('We Bare Bears')">We Bare Bears</button>
+	<button class="w3-bar-item w3-button" onclick="openCartoon('Power Puff Girls')">Power Puff Girls</button>
+	<button class="w3-bar-item w3-button" onclick="openCartoon('Mickey Mouse')">Mickey Mouse</button>
+	<button class="w3-bar-item w3-button" onclick="openCartoon('Gumball')">Gumball</button>
+	<div class="w3-dropdown-hover">
+		<button class="w3-button">Lainnya</button>
+		<div class="w3-dropdown-content w3-bar-block w3-card-4">
+				<button class="w3-bar-item w3-button" onclick="openCartoon('Adventure Time')">Adventure Time</button>
+				<button class="w3-bar-item w3-button" onclick="openCartoon('Looney Tunes')">Looney Tunes</button>
+		</div>
+	</div>
+</div>
+		
+<div id="We Bare Bears" class="w3-container cartoon w3-animate-fading" style="display:none">
+	<center>
+	<h1>We Bare Bears</h1>
+	<img src="wbb.jpg" style="width:25%">
+	<p> We Bare Bears is an American animated series created by Daniel Chong for Cartoon Network. The show follows Three Bear brothers Grizzly, Panda, and Ice Bear, and their awkward attempts at integrating with the human world in the San Francisco Bay Area.</p>
+</div>
+
+<div id="Power Puff Girls" class="w3-container cartoon w3-animate-bottom" style="display:none">
+	<center>
+	<h1>Power Puff Girls</h1>
+	<img src="ppg.jpg" style="width:25%">
+	<p>The Powerpuff Girls, defenders of the fictional metropolis Townville, consist of the red-haired, level-headed leader, Blossom; the sweet, blonde, and often underestimated Bubbles; and the quick-tempered, black-haired Buttercup.</p>
+</div>
+
+<div id="Mickey Mouse" class="w3-container cartoon w3-animate-top" style="display:none">
+	<center>
+	<h1>Mickey Mouse</h1>
+	<img src="mm.jpg" style="width:25%">
+	<p>Mickey Mouse is an American cartoon character co-created in 1928 by Walt Disney and Ub Iwerks. The longtime icon and mascot of The Walt Disney Company, Mickey is an anthropomorphic mouse who typically wears red shorts, large yellow shoes, and white gloves.</p>
+</div>
+
+<div id="Gumball" class="w3-container cartoon w3-animate-zoom" style="display:none">
+	<center>
+	<h1>Gumball</h1>
+	<img src="gumball.jpg" style="width:25%">
+	<p> The series revolves around the life of a 12-year-old cat named Gumball Watterson and his frequent shenanigans in the fictional American city of Elmore, accompanied by his adopted goldfish brother and best friend Darwin.</p>
+</div>
+
+<div id="Adventure Time" class="w3-container cartoon w3-animate-right" style="display:none">
+	<center>
+	<h1>Adventure Time</h1>
+	<img src="adventure.jpg" style="width:25%">
+	<p>Adventure Time follows the adventures of a boy named Finn the Human  and his best friend and adoptive brother Jake the Dog who has magical powers to change shape and size at will. Pendleton Ward, the series' creator, describes Finn as a "fiery little kid with strong morals".</p>
+</div>
+
+
+<div id="Looney Tunes" class="w3-container cartoon w3-animate-left" style="display:none">
+	<center>
+	<h1>Looney Tunes</h1>
+	<img src="looney.jpg" style="width:25%">
+	<p>Looney Tunes are a series of cartoons consisting of varying characters in humorous situations. Some of the most famous characters are Bugs Bunny, a mischievous rabbit. Daffy Duck, an ill-tempered duck; Elmer Fudd, a befuddled hunter; and Porky Pig, a stuttering pig, along with a host of other characters.</p>
+</div>
+
+
+<script>
+function openCartoon(namaCartoon) {
+var i;
+var x = document.getElementsByClassName("cartoon");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namaCartoon).style.display = "block";
+}
+</script>
+
+</body>
+</html>
